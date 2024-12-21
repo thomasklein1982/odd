@@ -4,17 +4,28 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>ODD</title>
+    <script src="/src/ui.js"></script>
   </head>
   <body>
     <div id="app">
       <div class="screen" id="start">
         <h1>One Deck Dungeon</h1>
-        <select id="player_count">
-          <option>1 Spieler*in</option>
-          <option>2 Spieler*innen</option>
-          <option>3 Spieler*innen</option>
-          <option>4 Spieler*innen</option>
+        <h2>Wähle die Spieler*innen-Anzahl:</h2>
+        <select id="player_count_select">
+          <option value="1">1 Spieler*in</option>
+          <option value="2">2 Spieler*innen</option>
+          <option value="3">3 Spieler*innen</option>
+          <option value="4">4 Spieler*innen</option>
         </select>
+        <h2>Wähle den Boss:</h2>
+        <select id="boss_select">
+          <option value="dragon">Drache</option>
+          <!-- <option value="hydra">Hydra</option>
+          <option value="yeti">Yeti</option>
+          <option value="minotaur">Minotaurus</option>
+          <option value="lich">Lich</option> -->
+        </select>
+        <h2>Starte das Spiel</h2>
         <button onclick="startGame()">Spiel starten</button>
       </div>
       <div class="screen" id="game">
